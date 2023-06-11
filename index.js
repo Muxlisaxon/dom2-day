@@ -1,0 +1,10 @@
+const lang=navigator.language
+const date = new Date();
+let day=date.getDate();
+let weekend =date.toLocaleString(lang,{weekday:'long'});
+let month=date.toLocaleString(lang,{month:'long'});
+let year=date.getFullYear();
+document.getElementById('month').innerHTML=month
+document.getElementById('weekend').innerHTML=weekend
+document.getElementById('day').innerHTML=day
+document.getElementById('year').innerHTML=year;
